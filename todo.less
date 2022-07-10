@@ -1,0 +1,48 @@
+.panel{
+    width:50% !important;
+    font-size:14px !important;
+    margin:20px auto !important;
+    .panel-heading{
+        .panel-title{
+            margin-bottom:10px;
+            .count{
+                color:red;
+                font-weight:bold;
+            }
+        }
+        input{
+            outline:none !important; /* 光标进入下清除外边框 */
+        }
+    }
+
+    .panel-body{
+        .list-group{
+            .list-group-item{
+                vertical-align:middle;
+                span{
+                    display:inline-block;
+                    margin-left:15px;
+                    &.complete{
+                        text-decoration:line-through;
+                    }
+                }
+
+                button{
+                    float:right;
+                    margin-right:15px;
+                    background:red;
+                    display:none;
+                }
+                &:hover button{
+                    display:block;
+                    cursor:pointer;
+                    outline:none;
+                }
+            }
+        }
+    }
+
+    .panel-footer{
+        
+    }
+}
